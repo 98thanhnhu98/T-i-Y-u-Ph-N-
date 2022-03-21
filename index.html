@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ed34e232a5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Play&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+    <div class="mid-header">
+        <div class="container">
+            <div class="row">
+                <!--phần logo-->
+                <div class="logo">
+                    <a class="logo-wrapper">
+                        <img class="img" src="../images/logo1Update.png">
+                        <br>
+                        <p class="font-logo">𝙾𝚛𝚐𝚊𝚗𝚒𝚌𝚂𝚝𝚊𝚛</p>
+                    </a>
+                </div>
+                <!-- phần search-->
+                <div class="search">
+                    <div class="mid-search">
+                        <form action="/search" method="get" class="input-group-search-bar" role="search">
+                            <input type="text" name="q" value autocomplete="of f" placeholder="Search..." class="input-search" required>
+                            <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <!--phần row-col1 -->
+                <div class="row-col1">
+                    <ul class="row-col1-connect1" style="list-style-type:none">
+                        <li>
+                            <p>Cart</p>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <ul>
+                                <li>trống...</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="row-col1-connect2" style="list-style-type:none">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <li>𝙻𝙾𝙶 𝙸𝙽</li>
+                    </ul>
+
+                    <ul class="row-col1-connect3" style="list-style-type:none">
+                        <li>𝚂𝙸𝙶𝙽 𝙸𝙽</li>
+                    </ul>
+                </div>
+                <!--end logo-->
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- end header-->
+<div class="top-subheader">
+    <ul class="ul-top-subheader" style="list-style-type: none">
+        <div id="dp_menu" class="dp_menu">
+            <button><span>MENU</span></button>
+            <ul class="main-menu" style="display:none;list-style: none;text-decoration: none;">
+                <li style="list-style: none;text-decoration: none"><a href="#">Fruit</a></li>
+                <li style="list-style: none;text-decoration: none"><a href="#">Nuts</a></li>
+                <li style="list-style: none;text-decoration: none"><a href="#">Vegess</a></li>
+                <li style="list-style: none;text-decoration: none"><a href="https://www.daipho.com/gioi-thieu/">Other</a></li>
+                <li style="list-style: none;text-decoration: none"><a href="https://www.daipho.com/lien-he/">Contact</a></li>
+            </ul>
+        </div>
+        <li class="li2">Combo</li>
+        <ul class="menu">
+            <li class="li3">Favourite
+                <ul style="list-style-type: none">
+                    <li><a>Trống</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li class="li4">Intro</li>
+        <li class="li5">Contact</li>
+        <li class="li6">Policy</li>
+        <li class="li7">Language</li>
+    </ul>
+</div>
+<div class="subheader">
+    <div class="mid-subheader-left">
+        <div>
+            <li id="sec1-li7"><h1><i class="fa-solid fa-sliders"></i>𝐅𝐢𝐥𝐭𝐞𝐫</h1></li>
+            <ul class="filter-expense">
+                <div>Price</div>
+                <li id="filter-expense-li1">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>Under 99.000 vnđ</i>
+                        </label>
+                    </span>
+                </li>
+                <li id="filter-expense-li2">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>100.000 vnđ - 299.000 vnđ</i>
+                        </label>
+                    </span>
+                </li>
+                <li id="filter-expense-li3">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>300.000 vnđ - 499.000 vnđ</i>
+                        </label>
+                    </span>
+                </li>
+                <li id="filter-expense-li4">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>Over 500.000 vnđ</i>
+                        </label>
+                    </span>
+                </li>
+            </ul>
+
+            <ul class="filer-bestseller-newsell">
+                <div>Status</div>
+                <li id="filer-bestseller-newsell-li1">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>Highlights product</i>
+                        </label>
+                    </span>
+                </li>
+                <li id="filer-bestseller-newsell-li2">
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <i>New product</i>
+                        </label>
+                    </span>
+                </li>
+            </ul>
+
+            <ul class="filter-rate">
+                <div>Reviews</div>
+                <li>
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <a>
+                                <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                        </label>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <a>
+                               <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                        </label>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <a>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                        </label>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <a>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                        </label>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <label>
+                            <input type="checkbox">
+                            <a>
+                                <i class="fa-solid fa-star"></i>
+                            </a>
+                        </label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mid-subheader-central">
+        <div class="silder-frame">
+            <div class="slider-images">
+                <div class="img-containter">
+                    <img alt="" src="../images/img4.png">
+                </div>
+                <div class="img-containter">
+                    <img alt="" src="../images/img5.png">
+                </div>
+                <div class="img-containter">
+                    <img alt="" src="../images/img6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end subheader-->
+
+<div class="sec1">
+    <div class="mid-sec1">
+        <ul id="ul-mid-sec1" style="list-style-type: none">
+            <li id="sec1-li1"><h1>𝐅𝐫𝐮𝐢𝐭</h1></li>
+        </ul>
+        <div class="mid-sec1-body">
+            <div class="div1-product-fruit">
+                <div class="img1-product"><img src="../images/fruit/Cam.jpg"></div>
+                <div class="p1">
+                    <h1 title="American Navel Yellow Orange (1kg)">American Navel...</h1>
+                    <h2>129.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div2-product-fruit">
+                <div class="img2-product"><img src="../images/fruit/Dâu tây.jpg"></div>
+                <div class="p2">
+                    <h1 title="Korean Strawberry (hộp 0.3kg)">Korean Strawberry...</h1>
+                    <h2>289.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div3-product-fruit">
+                <div class="img3-product"><img src="../images/fruit/Lê.jpg"></div>
+                <div class="p3">
+                    <h1 title="South African Pear (1kg)">South African Pear...</h1>
+                    <h2>129.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div4-product-fruit">
+                <div class="img4-product"><img src="../images/fruit/nho đen.jpg"></div>
+                <div class="p4">
+                    <h1 title="South African Black Grapes (0.5kg)">South African Black...</h1>
+                    <h2>120.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div5-product-fruit">
+                <div class="img5-product"><img src="../images/fruit/táo.jpg"></div>
+                <div class="p5">
+                    <h1 title="VietNam Envy Apple (1kg)">VietNam Envy...</h1>
+                    <h2>349.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div6-product-fruit">
+                <div class="img6-product"><img src="../images/fruit/Xoài.jpg"></div>
+                <div class="p6">
+                    <h1 title="Yellow Skin Acacia Mango (1kg)">Yellow Skin Acacia...</h1>
+                    <h2>65.000 vnđ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="div-more">
+            <div class="sub-divmore">
+                <div><p>See more</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section >
+
+<section class="sec1">
+    <div class="mid-sec1">
+        <ul id="ul-mid-sec4" style="list-style-type: none">
+            <li id="sec1-li4"><h1>𝐍𝐮𝐭𝐬</h1></li>
+        </ul>
+        <div class="mid-sec1-body">
+            <div class="div1-product-fruit">
+                <div class="img1-product"><img src="../images/nuts/hạt bí BoB.jpg"></div>
+                <div class="p1">
+                    <h1 title="Boba Red Mill Pumpkin Seeds (340g)">Boba Red Mill Pumpkin Seeds...</h1>
+                    <h2>255.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div2-product-fruit">
+                <div class="img2-product"><img src="../images/nuts/hạt chia.jpg"></div>
+                <div class="p2">
+                    <h1 title="Organic Chia Seeds (500g)">Organic Chia Seeds...</h1>
+                    <h2>220.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div3-product-fruit">
+                <div class="img3-product"><img src="../images/nuts/Hạt dẻ cười.jpg"></div>
+                <div class="p3">
+                    <h1 title="Pistachio nuts (170g)">Pistachio nuts (170g)</h1>
+                    <h2>138.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div4-product-fruit">
+                <div class="img4-product"><img src="../images/nuts/Hạt Hạch Nhân.jpg"></div>
+                <div class="p4">
+                    <h1 title="Organic Almonds (170g)">Organic Almonds...</h1>
+                    <h2>249.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div5-product-fruit">
+                <div class="img5-product"><img src="../images/nuts/Hạt phỉ hữu cơ.jpg"></div>
+                <div class="p5">
+                    <h1 title="Organic Hazelnuts OTS (200g)">Organic Hazelnuts OTS...</h1>
+                    <h2>198.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div6-product-fruit">
+                <div class="img6-product"><img src="../images/nuts/Ngô hữu cơ.jpg"></div>
+                <div class="p6">
+                    <h1 title="Organic popcorn (500g)">Organic popcorn...</h1>
+                    <h2>108.000 vnđ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="div-more">
+            <div class="sub-divmore">
+                <div><p>See more</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section >
+
+<!--            <li id="sec1-li5"><h1>𝐃𝐫𝐲 𝐟𝐫𝐮𝐢𝐭</h1></li>-->
+
+<section class="sec1">
+    <div class="mid-sec1">
+        <ul id="ul-mid-sec6" style="list-style-type: none">
+            <li id="sec1-li6"><h1>Veggies</h1></li>
+        </ul>
+        <div class="mid-sec1-body">
+            <div class="div1-product-fruit">
+                <div class="img1-product"><img src="../images/vegess/bí đao.jpg"></div>
+                <div class="p1">
+                    <h1 title="Organic green gourd (500g)">Organic green gourd (500g)...</h1>
+                    <h2>60.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div2-product-fruit">
+                <div class="img2-product"><img src="../images/vegess/Bắp cải.jpg"></div>
+                <div class="p2">
+                    <h1 title="Organic White Cabbage (700g)">Organic White Cabbage...</h1>
+                    <h2>77.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div3-product-fruit">
+                <div class="img3-product"><img src="../images/vegess/ngo.jpg"></div>
+                <div class="p3">
+                    <h1 title="Organic glutinous corn (1kg)">Organic glutinous corn (1kg)</h1>
+                    <h2>110.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div4-product-fruit">
+                <div class="img4-product"><img src="../images/vegess/Nấm Đông Cô Hàn Quốc.jpg"></div>
+                <div class="p4">
+                    <h1 title="Organic Shiitake">Organic Shiitake</h1>
+                    <h2>79.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div5-product-fruit">
+                <div class="img5-product"><img href="adrHoChiMinh.html" src="../images/vegess/súp nơ.jpg"></div>
+                <div class="p5">
+                    <h1 title="Organic Broccoli (300g)">Organic Broccoli...</h1>
+                    <h2>57.000 vnđ</h2>
+                </div>
+            </div>
+            <div class="div6-product-fruit">
+                <div class="img6-product"><img src="../images/vegess/Ớt chuông đỏ.jpg"></div>
+                <div class="p6">
+                    <h1 title="Oraganic Red Bell Pepper (300g)">Oraganic Red Bell Pepper...</h1>
+                    <h2>48.000 vnđ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="div-more">
+            <div class="sub-divmore">
+                <div><p>See more</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section >
+<!--------end body--------->
+<section>
+    <div class="first-container">
+        <div class="mid-first-container">
+            <div class="div-left">
+                <div class="div-img-storage"></div>
+                <div class="div-bill-cart"></div>
+            </div>
+            <div class="div-right">
+                <div class="div-name-star-seller"></div>
+                <div class="div-dis"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="second-container"></div>
+</section>
+<footer>
+    <div class="mid-footer" >
+        <div class="Donors">
+            <h1>Joint Venture</h1>
+            <a class="img1"><img style="width: 120px;height: 90px" src="../images/logo-pepsiupdate.png"></a>
+            <a class="img2"><img style="width: 120px;height: 90px" src="../images/logo-mcdonald.jpg"></a>
+            <a class="img3"><img style="width: 130px;height: 100px" src="../images/logo-orionupdate.png"></a>
+            <a class="img4"><img style="width: 130px;height: 100px" src="../images/logo-fptUpdate.png"></a>
+        </div>
+        <div class="Address">
+            <h1>Information</h1>
+            <p>Office Hours :</p>
+            <p>Opening Hours: 7am - 20pm</p>
+            <p>Address: <br>Số 8A Tôn Thất Thuyết, Mỹ Đình, Nam Từ Liên, Hà Nội</p>
+            <p>Phone Number : 099999999</p>
+            <p>Email : OrganicStar@superCar.superCar</p>
+        </div>
+        <div class="Map">
+            <p class="map-img"><iframe id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3210669601112!2d106.66516922675912!3d10.786703051536417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1647263521569!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+        </div>
+        <div class="QA">
+            <ul class="row-QA" style="float: left">
+                <h1 style="font-size: 25px">Make money with Us</h1>
+                <iframe id="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbeatvn.network%2F&tabs=timeline&width=200&height=50&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="200" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <li>Sell on Business</li>
+                <li>Sell apps on Organic</li>
+                <li>Sell products on Organic</li>
+
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<!--------end footer------->
+</body>
+</html>
